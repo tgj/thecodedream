@@ -16,8 +16,11 @@ main {
   padding: 1.5em;
 }
 
-hr {
-
+header,
+footer {
+  div {
+    font-size: 1.5vw !important;
+  }
 }
 
 header {
