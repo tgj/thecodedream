@@ -17,9 +17,9 @@
 
 <footer>
   <div class="float-left">
-    {{ now.toLocaleString() }}
-  </div>
-  <div class="float-right">
-    <small>As of: {{ lastUpdated.toTimeString() }}</small>
+    {{ now.toDateString() }} | {{ now.toLocaleTimeString()}}
+   </div>
+  <div class="float-right last-updated">
+    Last updated: {{ lastUpdated }}
   </div>
 </footer>

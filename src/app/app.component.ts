@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import set = Reflect.set;
+import moment from 'moment';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +10,14 @@ import set = Reflect.set;
 
 export class AppComponent {
   title = 'thecodedream';
-  lastUpdated = new Date();
-  now = this.lastUpdated;
+  today = new Date();
+  lastUpdated = moment(this.today).fromNow();
+  now = this.today;
 
   constructor() {
     setInterval(() => {
       this.now = new Date();
+      console.log(this.lastUpdated);
     }, 1000);
   }
 
