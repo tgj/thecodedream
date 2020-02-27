@@ -11,13 +11,12 @@ import moment from 'moment';
 export class AppComponent {
   title = 'thecodedream';
   today = new Date();
-  lastUpdated = moment(this.today).fromNow();
+  lastUpdated = moment(this.today);
   now = this.today;
 
   constructor() {
     setInterval(() => {
       this.now = new Date();
-      console.log(this.lastUpdated);
     }, 1000);
   }
 
