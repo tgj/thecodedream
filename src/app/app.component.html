@@ -1,9 +1,25 @@
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">tgjohns [Test Site]</a>
-</nav>
-<div>
-  <div class="container">
-    <!--  <button type="button" class="btn btn-outline-info btn-lg float-right mt-3">Login</button>-->
-    <img src="../assets/TGJ_0666.jpg" class="img-rounded" alt="egret"/>
+<header>
+  <div id="header">
+    <div class="float-left">
+      {{ 'Tyler Johnston USGR' }}
+    </div>
+    <div class="status float-right">
+      Status: {{ 'Available' }}
+    </div>
   </div>
-</div>
+</header>
+
+<main class="Site-content">
+  <div class="message text-center">
+    <em>Next 3 hours: Digital Product Catalog</em>
+  </div>
+</main>
+
+<footer>
+  <div class="float-left">
+    {{ now.toLocaleString() }}
+  </div>
+  <div class="float-right">
+    <small>As of: {{ lastUpdated.toTimeString() }}</small>
+  </div>
+</footer>
